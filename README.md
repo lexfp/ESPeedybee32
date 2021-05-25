@@ -7,7 +7,7 @@ However, I have not gotten the speedybee application to see this bluetooth conne
 
 # Wiring
 1) The wiring is very similar to the speedybee module. Basically, a free UART on the flight controller tx goes to the ESP32's RX (gpio16) and the flight controller rx goes to the ESP32's TX (gpio17). You may also need a separate ground pin for the tx/rx communication depending on the power source of your esp32. The ESP32 will also need VIN/GND connected to a separate power source or to your 5v/gnd on the flight controller. 
-2) 2) In the flight controller, go to the ports tab and set the UART you chose to "Configuration/MSP" and change the baud rate the 9600.
+2) In the flight controller, go to the ports tab and set the UART you chose to "Configuration/MSP" and change the baud rate the 9600.
 3) On your laptop, go to the bluetooth connections and connect to the ESPeedybee32. Then start up betaflight and choose the bluetooth connection you just established in the dropdown and select the baud rate to 9600. 
 
 # TODO
